@@ -5,6 +5,7 @@
     },
     "scripts": {
         "dev": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-        "build": "npx tailwindcss -i src/input.css -o public/output.css --minify --watch && xcopy src\\js\\script.js public\\js /Y"
+        "build": "npx tailwindcss -i src/input.css -o public/output.css --minify && xcopy /Y src\\js\\script.js public\\js\\",
+        "vercel-build": "npm run build"
     }
 }
