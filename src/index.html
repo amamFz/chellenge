@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Obito</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins">
+    <header class="w-full px-2.5 py-5 border-b border-border-ghost bg-white">
+      <nav class="w-[1130px] mx-auto flex justify-between items-center">
+        <div class="flex items-center gap-12.5">
+          <a href="#">
+            <img src="/public/assets/logo/logo.svg" alt="Logo Obito" />
+          </a>
+          <ul class="flex items-center gap-10">
+            <li><a href="#" class="font-semibold">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-5">
+          <a href="#">
+            <img
+              src="/public/assets/icon/device-message.svg"
+              alt="device-message"
+            />
+          </a>
+          <span class="w-0.5 h-12.5 bg-border-ghost"></span>
+          <ul class="flex items-center gap-3">
+            <li><a href="#" class="btn btn-outline">Sign Up</a></li>
+            <li><a href="#" class="btn btn-full">My Account</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="bg-[#F8FAF9] flex items-center justify-center">
+      <section class="flex gap-12.5">
+        <div
+          class="w-[510px] flex flex-col gap-4 p-5 border border-border-ghost rounded-[20px] my-12.5 ml-[70px]"
+        >
+          <h2 class="text-[22px] font-bold">Upgrade Your Skills</h2>
+          <form class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <div
+                id="profile-container"
+                class="w-[90px] h-[90px] rounded-full border border-border-ghost flex items-center justify-center overflow-hidden bg-white"
+              >
+                <label
+                  for="file-input"
+                  class="cursor-pointer flex flex-col items-center"
+                >
+                  <img
+                    id="profile-img"
+                    class="hidden w-full h-full object-cover"
+                  />
+                  <span
+                    id="add-text"
+                    class="text-[14px] text-secondary font-semibold text-center"
+                  >
+                    Add <br />
+                    Photo
+                  </span>
+                </label>
+                <input
+                  type="file"
+                  id="file-input"
+                  class="hidden"
+                  accept="image/*"
+                />
+              </div>
+
+              <button
+                id="delete-photo"
+                class="hidden uppercase px-2.5 py-1.5 bg-bg-warning text-text-warning cursor-pointer rounded-full font-bold"
+              >
+                Delete Photo
+              </button>
+            </div>
+
+            <div>
+              <label for="name" class="mb-2 block text-base"
+                >Complete Name</label
+              >
+              <div
+                class="px-5 py-3.5 border border-border-ghost flex rounded-full items-center gap-2"
+              >
+                <img
+                  src="/public/assets/icon/profile.svg"
+                  alt="icon user"
+                  class="w-5 h-5"
+                />
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Type your valid email address"
+                  class="w-full border-none focus:outline-none font-semibold placeholder:font-normal text-base"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="ocupation" class="mb-2 block text-base"
+                >Ocupation</label
+              >
+              <div
+                class="px-5 py-3.5 border border-border-ghost flex rounded-full items-center gap-2"
+              >
+                <img
+                  src="/public/assets/icon/briefcase.svg"
+                  alt="icon user"
+                  class="w-5 h-5"
+                />
+                <input
+                  type="text"
+                  id="ocupation"
+                  value="Programmer"
+                  placeholder="Type your valid email address"
+                  class="w-full border-none focus:outline-none font-semibold placeholder:font-normal text-base"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="email" class="mb-2 block text-base"
+                >Email Address</label
+              >
+              <div
+                class="px-5 py-3.5 border border-border-ghost flex rounded-full items-center gap-2"
+              >
+                <img
+                  src="/public/assets/icon/sms.svg"
+                  alt="icon user"
+                  class="w-5 h-5"
+                />
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Type your valid email address"
+                  class="w-full border-none focus:outline-none font-semibold placeholder:font-normal text-base"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="password" class="mb-2 block text-base"
+                >Password</label
+              >
+              <div
+                class="px-5 py-3.5 border border-border-ghost flex rounded-full items-center gap-2"
+              >
+                <img
+                  src="/public/assets/icon/shield-security.svg"
+                  alt="icon user"
+                  class="w-5 h-5"
+                />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Type your valid email address"
+                  class="w-full border-none focus:outline-none font-semibold placeholder:font-normal text-base"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="confirm password" class="mb-2 block text-base"
+                >Confirm Password</label
+              >
+              <div
+                class="px-5 py-3.5 border border-border-ghost flex rounded-full items-center gap-2"
+              >
+                <img
+                  src="/public/assets/icon/shield-security.svg"
+                  alt="icon user"
+                  class="w-5 h-5"
+                />
+                <input
+                  type="password"
+                  id="confirm password"
+                  placeholder="Type your valid email address"
+                  class="w-full border-none focus:outline-none font-semibold placeholder:font-normal text-base"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="btn btn-full bg-primary text-white font-semibold cursor-pointer"
+            >
+              Create My Account
+            </button>
+          </form>
+        </div>
+
+        <div class="flex">
+          <img
+            src="/public//assets//images/banner.png"
+            alt="Image Banner"
+            class="w-[645px] h-[847px]"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

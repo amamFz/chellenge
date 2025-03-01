@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2f6a62;
+  --color-secondary: #0a0723;
+  --color-border-ghost: #eaecee;
+  --color-bg-warning: #ffe3e1;
+  --color-text-warning: #ef372b;
+  --font-poppins: "Poppins", sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply font-semibold px-5 py-3 rounded-full;
+  }
+  .btn-full {
+    @apply bg-primary text-white;
+  }
+
+  .btn-outline {
+    @apply border border-border-ghost text-secondary;
+  }
+}
